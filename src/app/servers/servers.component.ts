@@ -11,12 +11,12 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
   allowNewServers=false;
   serverCreationStatus='No server is created!';
-  serverName='';
+  serverName='Sophos';
   constructor() { 
     //it is nothing but a method runs at the point of time component is created by angular
-    setTimeout(()=>{
-      this.allowNewServers=true;
-    },2000);
+    // setTimeout(()=>{
+    //   this.allowNewServers=true;
+    // },2000);
   }
 
   ngOnInit(): void {
