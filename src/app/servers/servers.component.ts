@@ -14,16 +14,16 @@ export class ServersComponent implements OnInit {
   serverName='Sophos';
   constructor() { 
     //it is nothing but a method runs at the point of time component is created by angular
-    // setTimeout(()=>{
-    //   this.allowNewServers=true;
-    // },2000);
+    setTimeout(()=>{
+      this.allowNewServers=true;
+    },2000);
   }
 
   ngOnInit(): void {
   }
 
   onCreateServer(){
-    this.serverCreationStatus='Server was created!!!';
+    this.serverCreationStatus='Server was created And Name is: '+this.serverName;
   }
   onUpdateServerName(event:any){
     this.serverName=(<HTMLInputElement>event.target).value;

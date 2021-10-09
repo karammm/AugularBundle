@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { ServersComponent } from './servers/servers.component';
 import { SuccessAlertComponent } from './SuccessAlert/successalert.component';
 import { WarningAlertComponent } from './WarningAlert/warningalet.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { WarningAlertComponent } from './WarningAlert/warningalet.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
