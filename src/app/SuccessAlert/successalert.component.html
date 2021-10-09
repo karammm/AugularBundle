@@ -1,1 +1,8 @@
 <h4>This is a success component</h4>
+
+    <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="userName">
+    <button class="btn btn-primary" [disabled]="userName===''" (click)="userName=''">Reset Name</button>
+    <p>{{userName}}</p>

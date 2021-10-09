@@ -5,4 +5,8 @@ import { Component } from "@angular/core";
     templateUrl:'./successalert.component.html',
     styleUrls: ['./successalert.component.css']
 })
-export class SuccessAlertComponent{}
+export class SuccessAlertComponent{
+    userName:string='';
+    ngOnInit(): void {
+    }
+}
