@@ -15,6 +15,8 @@
     class="btn btn-primary" 
     (click)="onCreateServer()"
     >Add Server</button>
-<p>{{serverCreationStatus}}</p>
-
+<p *ngIf="serverCreatd; else noserver">{{serverCreationStatus}}</p>
+<ng-template #noserver>
+<p >No Server Present</p>
+</ng-template>
 <p>servers works!</p>

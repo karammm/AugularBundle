@@ -12,6 +12,7 @@ export class ServersComponent implements OnInit {
   allowNewServers=false;
   serverCreationStatus='No server is created!';
   serverName='Sophos';
+  serverCreatd=false;
   constructor() { 
     //it is nothing but a method runs at the point of time component is created by angular
     setTimeout(()=>{
@@ -23,6 +24,7 @@ export class ServersComponent implements OnInit {
   }
 
   onCreateServer(){
+    this.serverCreatd=true;
     this.serverCreationStatus='Server was created And Name is: '+this.serverName;
   }
   onUpdateServerName(event:any){
